@@ -52,4 +52,4 @@ out.frame <- data.frame(PassengerId=testdata$PassengerId, survived=prediction)
 # TODO - if there are any NAs let's assume they didn't survive for now
 out.frame$survived[is.na(out.frame$survived)] <- 0
 
-write.table(out.frame, file=paste(getwd(), "/prediction.csv", sep=""), sep=",", quote=FALSE, col.names=TRUE, row.names=FALSE)
+write.table(out.frame, file=paste(getwd(), "/prediction_result.csv", sep=""), sep=",", quote=FALSE, col.names=TRUE, row.names=FALSE)
